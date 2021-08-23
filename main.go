@@ -72,7 +72,7 @@ func main() {
 		cli.StringFlag{
 			Name:   "bind-address,b",
 			Usage:  "Listen address for metrics HTTP endpoint",
-			Value:  "0.0.0.0:9234",
+			Value:  "127.0.0.1:9234",
 			EnvVar: "BIND_ADDRESS",
 		},
 		cli.StringFlag{

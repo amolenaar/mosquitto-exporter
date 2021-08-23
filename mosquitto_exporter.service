@@ -1,0 +1,15 @@
+[Unit]
+Description=Mosquitto Exporter for Prometheus
+After=network.target
+Wants=network.target
+
+[Service]
+Type=simple
+User=mosquitto
+ExecStart=/usr/local/bin/mosquitto_exporter
+Restart=always
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target
+
